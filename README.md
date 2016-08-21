@@ -41,27 +41,35 @@ Now simply run this to boot up the server:
 npm start
 ```
 
-## tasks
+## Tasks
 
 A quick reminder of all tasks available:
 
 #### Running the local server
 
-`npm start`
+```
+npm start
+```
 
 #### Running the tests
 
-`npm test`
+```
+npm test
+```
 
 #### Deploying to firebase
 
 You'll need to ensure you're logged into firebase first (if you are prompted, otherwise skip to next step):
 
-`firebase login`
+```
+firebase login
+```
 
 To deploy:
 
-`npm deploy`
+```
+npm deploy
+```
 
 This will then use the `gulpfile.babel.js` tasks to build the project and deploy it all fully minified to your Firebase account. You'll then be shown the full URL of your project in the terminal for viewing your live app!
 
