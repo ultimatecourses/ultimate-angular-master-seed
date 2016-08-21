@@ -49,4 +49,4 @@ There are several resources used inside this project, of which you can read furt
 * [npm](https://www.npmjs.com/)
 * [Gulp.js](http://gulpjs.com)
 * [ngAnnotate](https://github.com/olov/ng-annotate)
-* [ngTemplateCache)[https://github.com/miickel/gulp-angular-templatecache]
+* [ngTemplateCache](https://github.com/miickel/gulp-angular-templatecache)
