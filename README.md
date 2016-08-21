@@ -2,14 +2,12 @@
 
 > This repo serves as the seed project for the master course as well as the final solution in a separate branch
 
-[Cloning](#cloning-the-seed-app) |
-[Dependencies](#dependency-installation) |
-[Server](#project-installation-and-server) |
+[Setup and install](#setup-and-install) |
 [Resources](#resources)
 
 ----
 
-## Cloning the seed app
+## Setup and install
 
 Fork this repo from inside GitHub so you can commit directly to your account, or simply download the `.zip` bundle with the contents inside.
 
