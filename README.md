@@ -2,7 +2,14 @@
 
 > This repo serves as the seed project for the master course as well as the final solution in a separate branch
 
-## Installing the seed app
+[Cloning](#cloning-the-seed-app) |
+[Dependencies](#dependency-installation) |
+[Server](#project-installation-and-server) |
+[Resources](#resources)
+
+----
+
+## Cloning the seed app
 
 Fork this repo from inside GitHub so you can commit directly to your account, or simply download the `.zip` bundle with the contents inside.
 
@@ -39,3 +46,7 @@ There are several resources used inside this project, of which you can read furt
 
 * [Firebase Docs](https://firebase.google.com/docs/)
 * [AngularFire Repo/Docs](https://github.com/firebase/angularfire)
+* [npm](https://www.npmjs.com/)
+* [Gulp.js](http://gulpjs.com)
+* [ngAnnotate](https://github.com/olov/ng-annotate)
+* [ngTemplateCache)[https://github.com/miickel/gulp-angular-templatecache]
