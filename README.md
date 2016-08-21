@@ -6,7 +6,7 @@
 
 [Setup and install](#setup-and-install) |
 [Tasks](#tasks) |
-[Firebase Rules] |
+[Firebase Rules](#firebase-rules) |
 [Resources](#resources)
 
 ----
