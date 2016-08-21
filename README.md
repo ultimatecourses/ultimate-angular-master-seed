@@ -7,6 +7,8 @@
 
 ----
 
+<a href="https://courses.toddmotto.com" target="_blank"><img src="https://toddmotto.com/img/ua.png"></a>
+
 ## Setup and install
 
 Fork this repo from inside GitHub so you can commit directly to your account, or simply download the `.zip` bundle with the contents inside.
