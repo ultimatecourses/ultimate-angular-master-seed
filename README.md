@@ -83,5 +83,6 @@ There are several resources used inside this project, of which you can read furt
 * [AngularFire Repo/Docs](https://github.com/firebase/angularfire)
 * [npm](https://www.npmjs.com/)
 * [Gulp.js](http://gulpjs.com)
+* [ui-router](https://github.com/angular-ui/ui-router)
 * [ngAnnotate](https://github.com/olov/ng-annotate)
 * [ngTemplateCache](https://github.com/miickel/gulp-angular-templatecache)
