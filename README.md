@@ -1,3 +1,5 @@
+<a href="https://courses.toddmotto.com" target="_blank"><img src="https://toddmotto.com/img/ua.png"></a>
+
 # Ultimate Angular: Master App
 
 > This repo serves as the seed project for the master course as well as the final solution in a separate branch
@@ -8,7 +10,6 @@
 
 ----
 
-<a href="https://courses.toddmotto.com" target="_blank"><img src="https://toddmotto.com/img/ua.png"></a>
 
 ## Setup and install
 
