@@ -2,14 +2,13 @@
 
 # Ultimate Angular: Master App
 
-> This repo serves as the seed project for the master course as well as the final solution in a separate branch
+> This repo serves as the seed project for the master course as well as the final solution in a separate branch, come and [learn advanced Angular](https://courses.toddmotto.com) 1.5 architecture and components!
 
 [Setup and install](#setup-and-install) |
 [Tasks](#tasks) |
 [Resources](#resources)
 
 ----
-
 
 ## Setup and install
 
@@ -41,6 +40,8 @@ Now simply run this to boot up the server:
 ```
 npm start
 ```
+
+Everything you do will be inside of `/src`, and everything is compiled and outputted inside `/dist`, this is the same for both local development and deployment.
 
 ## Tasks
 
