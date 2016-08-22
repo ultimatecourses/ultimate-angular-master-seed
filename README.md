@@ -71,7 +71,7 @@ firebase login
 To deploy:
 
 ```
-npm deploy
+npm run deploy
 ```
 
 This will then use the `gulpfile.babel.js` tasks to build the project and deploy it all fully minified to your Firebase account. You'll then be shown the full URL of your project in the terminal for viewing your live app!
