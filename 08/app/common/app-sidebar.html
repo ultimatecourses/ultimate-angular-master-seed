@@ -1,0 +1,24 @@
+<aside class="sidebar">
+  <div class="sidebar__logo">
+    <a href="">
+      <img src="/img/logo.png" alt="">
+    </a>
+  </div>
+  <span class="sidebar__header">
+    Tags
+  </span>
+  <ul class="sidebar__lst">
+    <li
+      class="sidebar__item"
+      ng-repeat="item in ::$ctrl.contactTags">
+        <a
+          href=""
+          class="sidebar__link">
+          <i class="material-icons">
+            {{ ::item.icon }}
+          </i>
+          {{ ::item.label }}
+        </a>
+    </li>
+  </ul>
+</aside>
