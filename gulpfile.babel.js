@@ -4,6 +4,7 @@ import wrap from 'gulp-wrap';
 import uglify from 'gulp-uglify';
 import htmlmin from 'gulp-htmlmin';
 import gulpif from 'gulp-if';
+import sass from 'gulp-sass';
 import yargs from 'yargs';
 import ngAnnotate from 'gulp-ng-annotate';
 import templateCache from 'gulp-angular-templatecache';
@@ -19,6 +20,7 @@ const paths = {
   dist: './dist/',
   scripts: [`${root}/app/**/*.js`, `!${root}/app/**/*.spec.js`],
   tests: `${root}/app/**/*.spec.js`,
+  styles: `${root}/sass/*.scss`,
   templates: `${root}/app/**/*.html`,
   modules: [
     'angular/angular.js',
@@ -29,7 +31,6 @@ const paths = {
   ],
   static: [
     `${root}/index.html`,
-    `${root}/css/**/*`,
     `${root}/fonts/**/*`,
     `${root}/img/**/*`
   ]
@@ -59,10 +60,17 @@ gulp.task('modules', ['templates'], () => {
     .pipe(gulp.dest(paths.dist + 'js/'));
 });
 
+gulp.task('styles', () => {
+  return gulp.src(paths.styles)
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(gulp.dest(paths.dist + 'css/'));
+});
+
 gulp.task('scripts', ['modules'], () => {
   return gulp.src([
+      `!${root}/app/**/*.spec.js`,
       `${root}/app/**/*.module.js`,
-      `${root}/app/**/*.js`,
+      ...paths.scripts,
       './templates.js'
     ])
     .pipe(wrap('(function(angular){\n\'use strict\';\n<%= contents %>})(window.angular);'))
@@ -88,10 +96,11 @@ gulp.task('copy', ['clean'], () => {
 });
 
 gulp.task('watch', ['serve', 'scripts'], () => {
-  return gulp.watch([paths.scripts, paths.templates], ['scripts']);
+  gulp.watch([paths.scripts, paths.templates], ['scripts']);
+  gulp.watch(paths.styles, ['styles']);
 });
 
-gulp.task('firebase', ['scripts'], cb => {
+gulp.task('firebase', ['styles', 'scripts'], cb => {
   return exec('firebase deploy', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
@@ -101,6 +110,7 @@ gulp.task('firebase', ['scripts'], cb => {
 
 gulp.task('default', [
   'copy',
+  'styles',
   'serve',
   'watch'
 ]);
