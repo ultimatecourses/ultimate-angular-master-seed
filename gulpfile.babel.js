@@ -12,6 +12,7 @@ import server from 'browser-sync';
 import del from 'del';
 import path from 'path';
 import child from 'child_process';
+import sourcemaps from 'gulp-sourcemaps';
 
 const exec = child.exec;
 const argv = yargs.argv;
@@ -73,10 +74,12 @@ gulp.task('scripts', ['modules'], () => {
       ...paths.scripts,
       './templates.js'
     ])
+    .pipe(sourcemaps.init())
     .pipe(wrap('(function(angular){\n\'use strict\';\n<%= contents %>})(window.angular);'))
     .pipe(concat('bundle.js'))
     .pipe(ngAnnotate())
     .pipe(gulpif(argv.deploy, uglify()))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dist + 'js/'));
 });
 
