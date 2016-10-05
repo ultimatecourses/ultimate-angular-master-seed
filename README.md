@@ -1,4 +1,4 @@
-<a href="https://ultimateangular.com" target="_blank"><img src="https://toddmotto.com/img/ua.png"></a>
+<a href="https://ultimateangular.com" target="_blank"><img src="https://toddmotto.com/img/ua.png?new"></a>
 
 # Ultimate Angular: Pro App
 
