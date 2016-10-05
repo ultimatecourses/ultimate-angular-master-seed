@@ -1,8 +1,8 @@
-<a href="https://courses.toddmotto.com" target="_blank"><img src="https://toddmotto.com/img/ua.png"></a>
+<a href="https://ultimateangular.com" target="_blank"><img src="https://toddmotto.com/img/ua.png"></a>
 
-# Ultimate Angular: Master App
+# Ultimate Angular: Pro App
 
-> This repo serves as the seed project for the master course as well as the final solution in a separate branch, come and [learn advanced Angular](https://courses.toddmotto.com) 1.5 architecture and components!
+> This repo serves as the seed project for the Ultimate Angular 1.x Pro course as well as the final solution in a separate branch, come and [learn advanced Angular](https://ultimateangular.com) 1.5 architecture and components!
 
 [Setup and install](#setup-and-install) |
 [Tasks](#tasks) |
